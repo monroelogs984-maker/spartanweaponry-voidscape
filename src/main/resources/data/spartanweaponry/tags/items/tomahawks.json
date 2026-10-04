@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_tomahawk",
-    "spartanweaponryvoidscape:corrupt_tomahawk"
+    "spartanweaponryvoidscape:corrupt_tomahawk",
+    "spartanweaponryvoidscape:titanite_tomahawk",
+    "spartanweaponryvoidscape:ichor_tomahawk",
+    "spartanweaponryvoidscape:astral_tomahawk"
   ]
 }

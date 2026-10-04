@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_greatsword",
-    "spartanweaponryvoidscape:corrupt_greatsword"
+    "spartanweaponryvoidscape:corrupt_greatsword",
+    "spartanweaponryvoidscape:titanite_greatsword",
+    "spartanweaponryvoidscape:ichor_greatsword",
+    "spartanweaponryvoidscape:astral_greatsword"
   ]
 }

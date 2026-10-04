@@ -1,0 +1,15 @@
+{
+  "type": "voidscape:smithing",
+  "template": {
+    "item": "voidscape:voidic_template"
+  },
+  "base": {
+    "item": "spartanweaponryvoidscape:ichor_longsword"
+  },
+  "addition": {
+    "item": "voidscape:astral_crystal"
+  },
+  "result": {
+    "item": "spartanweaponryvoidscape:astral_longsword"
+  }
+}

@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_battleaxe",
-    "spartanweaponryvoidscape:corrupt_battleaxe"
+    "spartanweaponryvoidscape:corrupt_battleaxe",
+    "spartanweaponryvoidscape:titanite_battleaxe",
+    "spartanweaponryvoidscape:ichor_battleaxe",
+    "spartanweaponryvoidscape:astral_battleaxe"
   ]
 }

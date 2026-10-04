@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_battle_hammer",
-    "spartanweaponryvoidscape:corrupt_battle_hammer"
+    "spartanweaponryvoidscape:corrupt_battle_hammer",
+    "spartanweaponryvoidscape:titanite_battle_hammer",
+    "spartanweaponryvoidscape:ichor_battle_hammer",
+    "spartanweaponryvoidscape:astral_battle_hammer"
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "type": "voidscape:smithing",
+  "template": {
+    "item": "voidscape:voidic_template"
+  },
+  "base": {
+    "item": "spartanweaponryvoidscape:corrupt_dagger"
+  },
+  "addition": {
+    "item": "voidscape:titanite_shard"
+  },
+  "result": {
+    "item": "spartanweaponryvoidscape:titanite_dagger"
+  }
+}

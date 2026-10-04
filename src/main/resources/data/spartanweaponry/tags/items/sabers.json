@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_saber",
-    "spartanweaponryvoidscape:corrupt_saber"
+    "spartanweaponryvoidscape:corrupt_saber",
+    "spartanweaponryvoidscape:titanite_saber",
+    "spartanweaponryvoidscape:ichor_saber",
+    "spartanweaponryvoidscape:astral_saber"
   ]
 }

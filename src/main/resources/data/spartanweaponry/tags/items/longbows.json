@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_longbow",
-    "spartanweaponryvoidscape:corrupt_longbow"
+    "spartanweaponryvoidscape:corrupt_longbow",
+    "spartanweaponryvoidscape:titanite_longbow",
+    "spartanweaponryvoidscape:ichor_longbow",
+    "spartanweaponryvoidscape:astral_longbow"
   ]
 }

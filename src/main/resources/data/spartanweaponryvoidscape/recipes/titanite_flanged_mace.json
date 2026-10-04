@@ -1,0 +1,15 @@
+{
+  "type": "voidscape:smithing",
+  "template": {
+    "item": "voidscape:voidic_template"
+  },
+  "base": {
+    "item": "spartanweaponryvoidscape:corrupt_flanged_mace"
+  },
+  "addition": {
+    "item": "voidscape:titanite_shard"
+  },
+  "result": {
+    "item": "spartanweaponryvoidscape:titanite_flanged_mace"
+  }
+}

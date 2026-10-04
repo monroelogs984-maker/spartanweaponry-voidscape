@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_quarterstaff",
-    "spartanweaponryvoidscape:corrupt_quarterstaff"
+    "spartanweaponryvoidscape:corrupt_quarterstaff",
+    "spartanweaponryvoidscape:titanite_quarterstaff",
+    "spartanweaponryvoidscape:ichor_quarterstaff",
+    "spartanweaponryvoidscape:astral_quarterstaff"
   ]
 }

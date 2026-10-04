@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_flanged_mace",
-    "spartanweaponryvoidscape:corrupt_flanged_mace"
+    "spartanweaponryvoidscape:corrupt_flanged_mace",
+    "spartanweaponryvoidscape:titanite_flanged_mace",
+    "spartanweaponryvoidscape:ichor_flanged_mace",
+    "spartanweaponryvoidscape:astral_flanged_mace"
   ]
 }

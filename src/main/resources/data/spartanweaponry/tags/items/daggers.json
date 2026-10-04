@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_dagger",
-    "spartanweaponryvoidscape:corrupt_dagger"
+    "spartanweaponryvoidscape:corrupt_dagger",
+    "spartanweaponryvoidscape:titanite_dagger",
+    "spartanweaponryvoidscape:ichor_dagger",
+    "spartanweaponryvoidscape:astral_dagger"
   ]
 }

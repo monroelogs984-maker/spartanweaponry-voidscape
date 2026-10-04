@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_rapier",
-    "spartanweaponryvoidscape:corrupt_rapier"
+    "spartanweaponryvoidscape:corrupt_rapier",
+    "spartanweaponryvoidscape:titanite_rapier",
+    "spartanweaponryvoidscape:ichor_rapier",
+    "spartanweaponryvoidscape:astral_rapier"
   ]
 }

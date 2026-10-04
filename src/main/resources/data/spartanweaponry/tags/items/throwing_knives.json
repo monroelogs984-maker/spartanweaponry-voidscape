@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_throwing_knife",
-    "spartanweaponryvoidscape:corrupt_throwing_knife"
+    "spartanweaponryvoidscape:corrupt_throwing_knife",
+    "spartanweaponryvoidscape:titanite_throwing_knife",
+    "spartanweaponryvoidscape:ichor_throwing_knife",
+    "spartanweaponryvoidscape:astral_throwing_knife"
   ]
 }

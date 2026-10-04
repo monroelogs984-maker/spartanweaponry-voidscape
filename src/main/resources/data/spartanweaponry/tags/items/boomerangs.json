@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_boomerang",
-    "spartanweaponryvoidscape:corrupt_boomerang"
+    "spartanweaponryvoidscape:corrupt_boomerang",
+    "spartanweaponryvoidscape:titanite_boomerang",
+    "spartanweaponryvoidscape:ichor_boomerang",
+    "spartanweaponryvoidscape:astral_boomerang"
   ]
 }

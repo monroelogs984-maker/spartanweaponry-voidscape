@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_pike",
-    "spartanweaponryvoidscape:corrupt_pike"
+    "spartanweaponryvoidscape:corrupt_pike",
+    "spartanweaponryvoidscape:titanite_pike",
+    "spartanweaponryvoidscape:ichor_pike",
+    "spartanweaponryvoidscape:astral_pike"
   ]
 }

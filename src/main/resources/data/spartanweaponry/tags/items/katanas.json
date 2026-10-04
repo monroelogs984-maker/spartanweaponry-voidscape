@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_katana",
-    "spartanweaponryvoidscape:corrupt_katana"
+    "spartanweaponryvoidscape:corrupt_katana",
+    "spartanweaponryvoidscape:titanite_katana",
+    "spartanweaponryvoidscape:ichor_katana",
+    "spartanweaponryvoidscape:astral_katana"
   ]
 }

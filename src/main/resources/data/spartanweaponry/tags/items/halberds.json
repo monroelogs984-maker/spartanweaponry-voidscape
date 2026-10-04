@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_halberd",
-    "spartanweaponryvoidscape:corrupt_halberd"
+    "spartanweaponryvoidscape:corrupt_halberd",
+    "spartanweaponryvoidscape:titanite_halberd",
+    "spartanweaponryvoidscape:ichor_halberd",
+    "spartanweaponryvoidscape:astral_halberd"
   ]
 }

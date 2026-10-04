@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_glaive",
-    "spartanweaponryvoidscape:corrupt_glaive"
+    "spartanweaponryvoidscape:corrupt_glaive",
+    "spartanweaponryvoidscape:titanite_glaive",
+    "spartanweaponryvoidscape:ichor_glaive",
+    "spartanweaponryvoidscape:astral_glaive"
   ]
 }

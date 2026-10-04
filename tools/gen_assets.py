@@ -31,7 +31,7 @@ MATERIALS = {
         'display': 'Voidic Crystal',
         'palette': ['#1C1144', '#260F54', '#421B7C', '#561B92', '#7320AE', '#B03BD5', '#EC6FFB', '#FBC2FA'],
         'repair': ['voidscape:voidic_crystal'],
-        'traits': ['voidtouched'],
+        'traits': ['voidic_damage_1', 'voidtouched_1'],
         'upgrade_from': 'spartanweaponry:netherite_{type}',
         'addition': 'voidscape:voidic_crystal',
     },
@@ -39,16 +39,45 @@ MATERIALS = {
         'display': 'Corrupt',
         'palette': ['#1F1820', '#272029', '#333140', '#414247', '#4F5256', '#6D7072', '#7320AE', '#B03BD5'],
         'repair': ['voidscape:tendril'],
-        'traits': ['deep_voidtouched', 'corruption'],
+        'traits': ['voidic_damage_2', 'voidtouched_2', 'corruption'],
         'upgrade_from': MODID + ':voidic_crystal_{type}',
         'addition': 'voidscape:tendril',
+    },
+    # Titanite and Ichor swords pair Voidscape's dark hilt greys with a coloured blade; the blade
+    # colours carry the highlights, as with Corrupt.
+    'titanite': {
+        'display': 'Titanite',
+        'palette': ['#1F1820', '#272029', '#333140', '#006439', '#008F6B', '#00C2A5', '#80E6D8'],
+        'repair': ['voidscape:titanite_shard'],
+        'traits': ['voidic_damage_3', 'voidtouched_3', 'purge'],
+        'upgrade_from': MODID + ':corrupt_{type}',
+        'addition': 'voidscape:titanite_shard',
+    },
+    'ichor': {
+        'display': 'Ichor',
+        'palette': ['#272029', '#333140', '#C27A4E', '#D1895D', '#FF8113', '#E39B6F', '#FDA14B', '#FEC937', '#FDDD86'],
+        'repair': ['voidscape:ichor_crystal'],
+        'traits': ['voidic_damage_4', 'voidtouched_4', 'ichor_burn'],
+        'upgrade_from': MODID + ':titanite_{type}',
+        'addition': 'voidscape:ichor_crystal',
+    },
+    'astral': {
+        'display': 'Astral',
+        'palette': ['#450F3D', '#4E1343', '#6A145D', '#713364', '#8E327C', '#C24CAB', '#FF77E7', '#EFB6E5'],
+        'repair': ['voidscape:astral_crystal'],
+        'traits': ['voidic_damage_5', 'voidtouched_5', 'starstruck'],
+        'upgrade_from': MODID + ':ichor_{type}',
+        'addition': 'voidscape:astral_crystal',
     },
 }
 # name, description (Spartan reads tooltip.<modid>.trait.<id>.desc; keep in sync with the Java traits)
 TRAITS = {
-    'voidtouched': ('Voidtouched', '+30% damage while in the Void'),
-    'deep_voidtouched': ('Deep Voidtouched', '+40% damage while in the Void'),
+    **{f'voidtouched_{n}': ('Voidtouched', f'+{p}% damage while in the Void') for n, p in ((1, 30), (2, 40), (3, 50), (4, 60), (5, 75))},
+    **{f'voidic_damage_{n}': ('Voidic Damage', f'+{n} Voidic Damage and Voidic Arrow Damage') for n in range(1, 6)},
     'corruption': ('Corruption', 'Hits inflict Wither for 3 seconds'),
+    'purge': ('Purge', "Hits remove the target's beneficial effects"),
+    'ichor_burn': ('Ichor Burn', 'Hits set the target ablaze for 4 seconds'),
+    'starstruck': ('Starstruck', 'Hits make the target glow and slow it for 3 seconds'),
 }
 
 
@@ -57,8 +86,8 @@ def hex_rgb(h):
 
 
 def gradient(palette, t):
-    """t in [0,1] -> colour interpolated along the palette."""
-    pts = [hex_rgb(c) for c in palette]
+    """t in [0,1] -> colour interpolated along the palette (palette sorted darkest to lightest)."""
+    pts = sorted((hex_rgb(c) for c in palette), key=lambda c: 0.299 * c[0] + 0.587 * c[1] + 0.114 * c[2])
     pos = t * (len(pts) - 1)
     i = min(int(pos), len(pts) - 2)
     f = pos - i

@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_spear",
-    "spartanweaponryvoidscape:corrupt_spear"
+    "spartanweaponryvoidscape:corrupt_spear",
+    "spartanweaponryvoidscape:titanite_spear",
+    "spartanweaponryvoidscape:ichor_spear",
+    "spartanweaponryvoidscape:astral_spear"
   ]
 }

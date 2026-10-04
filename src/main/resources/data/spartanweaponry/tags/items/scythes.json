@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spartanweaponryvoidscape:voidic_crystal_scythe",
-    "spartanweaponryvoidscape:corrupt_scythe"
+    "spartanweaponryvoidscape:corrupt_scythe",
+    "spartanweaponryvoidscape:titanite_scythe",
+    "spartanweaponryvoidscape:ichor_scythe",
+    "spartanweaponryvoidscape:astral_scythe"
   ]
 }
