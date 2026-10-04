@@ -1,0 +1,8 @@
+Spartan Weaponry: Voidscape, by BROMAX. Code and generators under the MIT License (see LICENSE).
+
+Third-party material:
+- Weapon textures: derived from Spartan Weaponry's iron weapon textures by ObliviousSpartan (Apache License 2.0).
+  Modification: neutral-grey pixels recoloured by tools/gen_assets.py.
+- Recolour palettes: colour values sampled from Voidscape's sword textures by Tamaized. No Voidscape assets are included.
+- Model, recipe-tag, weapon-attribute and lang JSON layouts (tools/template): generated output of Spartan Weaponry Addon
+  Toolkit by KreloX (MIT), taken from Spartan Weaponry: Aquaculture by denispionicul (MIT).

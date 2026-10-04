@@ -6,6 +6,7 @@ license="MIT"
 modId="spartanweaponryvoidscape"
 version="${file.jarVersion}"
 displayName="Spartan Weaponry: Voidscape"
+logoFile="logo.png"
 authors="BROMAX"
 description='''
 Adds Voidscape materials (Voidic Crystal and Corrupt) to Spartan Weaponry, upgraded by smithing just like Voidscape's own gear.
