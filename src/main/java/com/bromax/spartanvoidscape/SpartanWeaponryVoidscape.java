@@ -56,9 +56,13 @@ public class SpartanWeaponryVoidscape extends SpartanAddon {
     public static final DeferredRegister<WeaponTrait> TRAITS = traitRegister(MODID);
     public static final DeferredRegister<CreativeModeTab> TABS = tabRegister(MODID);
 
+    // Levelled traits use a plain type ("voidtouched") plus setLevel: Spartan Toolkit registers them as
+    // "<type>_<level>" and Spartan shows "<name> <roman level>". Putting the number in the type as well
+    // doubled it ("voidtouched_1_1") and broke both the tooltips and the material trait tags.
+
     /** Voidtouched I-V: extra damage while the wielder is inside Voidscape's Void. */
     private static RegistryObject<WeaponTrait> voidtouched(int level, float multiplier) {
-        BetterWeaponTrait trait = new BetterWeaponTrait("voidtouched_" + level, MODID, TraitQuality.POSITIVE) {
+        BetterWeaponTrait trait = new BetterWeaponTrait("voidtouched", MODID, TraitQuality.POSITIVE) {
             @Override
             public String getDescription() {
                 return String.format(Locale.US, "+%d%% damage while in the Void", Math.round(this.magnitude * 100.0F - 100.0F));
@@ -83,7 +87,7 @@ public class SpartanWeaponryVoidscape extends SpartanAddon {
     private static RegistryObject<WeaponTrait> voidicDamage(int level) {
         UUID meleeId = UUID.nameUUIDFromBytes((MODID + ":voidic_dmg_" + level).getBytes(StandardCharsets.UTF_8));
         UUID arrowId = UUID.nameUUIDFromBytes((MODID + ":voidic_arrow_dmg_" + level).getBytes(StandardCharsets.UTF_8));
-        BetterWeaponTrait trait = new BetterWeaponTrait("voidic_damage_" + level, MODID, TraitQuality.POSITIVE) {
+        BetterWeaponTrait trait = new BetterWeaponTrait("voidic_damage", MODID, TraitQuality.POSITIVE) {
             @Override
             public String getDescription() {
                 return String.format(Locale.US, "+%d Voidic Damage and Voidic Arrow Damage", level);

@@ -70,10 +70,17 @@ MATERIALS = {
         'addition': 'voidscape:astral_crystal',
     },
 }
-# name, description (Spartan reads tooltip.<modid>.trait.<id>.desc; keep in sync with the Java traits)
+# Trait lang (keep in sync with the Java traits). Spartan looks up:
+#   title       tooltip.<modid>.trait.<type>             (+ the level numeral for levelled traits)
+#   desc check  tooltip.<modid>.trait.<type>.desc        (must exist or no description is shown)
+#   desc text   tooltip.<modid>.trait.<registry name>.desc  (registry name = <type>_<level> when levelled)
+TRAIT_TITLES = {'voidtouched': 'Voidtouched', 'voidic_damage': 'Voidic Damage', 'corruption': 'Corruption',
+                'purge': 'Purge', 'ichor_burn': 'Ichor Burn', 'starstruck': 'Starstruck'}
 TRAITS = {
-    **{f'voidtouched_{n}': ('Voidtouched', f'+{p}% damage while in the Void') for n, p in ((1, 30), (2, 40), (3, 50), (4, 60), (5, 75))},
-    **{f'voidic_damage_{n}': ('Voidic Damage', f'+{n} Voidic Damage and Voidic Arrow Damage') for n in range(1, 6)},
+    **{f'voidtouched_{n}': (None, f'+{p}% damage while in the Void') for n, p in ((1, 30), (2, 40), (3, 50), (4, 60), (5, 75))},
+    **{f'voidic_damage_{n}': (None, f'+{n} Voidic Damage and Voidic Arrow Damage') for n in range(1, 6)},
+    'voidtouched': (None, 'Extra damage while in the Void'),
+    'voidic_damage': (None, 'Adds Voidscape Voidic Damage'),
     'corruption': ('Corruption', 'Hits inflict Wither for 3 seconds'),
     'purge': ('Purge', "Hits remove the target's beneficial effects"),
     'ichor_burn': ('Ichor Burn', 'Hits set the target ablaze for 4 seconds'),
@@ -187,8 +194,9 @@ def main():
                         value.replace('Neptunium', spec['display'])
 
         lang['itemGroup.' + MODID] = 'Spartan Weaponry: Voidscape'
-        for trait, (name, desc) in TRAITS.items():
-            lang[f'tooltip.{MODID}.trait.{trait}'] = name
+        for trait_type, title in TRAIT_TITLES.items():
+            lang[f'tooltip.{MODID}.trait.{trait_type}'] = title
+        for trait, (_, desc) in TRAITS.items():
             lang[f'tooltip.{MODID}.trait.{trait}.desc'] = desc
         path = os.path.join(RES, 'assets', MODID, 'lang', 'en_us.json')
         os.makedirs(os.path.dirname(path), exist_ok=True)
