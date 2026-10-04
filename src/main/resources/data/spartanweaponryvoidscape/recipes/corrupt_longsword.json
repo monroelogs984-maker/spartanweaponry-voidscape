@@ -1,0 +1,15 @@
+{
+  "type": "voidscape:smithing",
+  "template": {
+    "item": "voidscape:voidic_template"
+  },
+  "base": {
+    "item": "spartanweaponryvoidscape:voidic_crystal_longsword"
+  },
+  "addition": {
+    "item": "voidscape:tendril"
+  },
+  "result": {
+    "item": "spartanweaponryvoidscape:corrupt_longsword"
+  }
+}

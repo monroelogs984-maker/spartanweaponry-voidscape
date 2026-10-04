@@ -1,0 +1,15 @@
+{
+  "type": "voidscape:smithing",
+  "template": {
+    "item": "voidscape:voidic_template"
+  },
+  "base": {
+    "item": "spartanweaponry:netherite_heavy_crossbow"
+  },
+  "addition": {
+    "item": "voidscape:voidic_crystal"
+  },
+  "result": {
+    "item": "spartanweaponryvoidscape:voidic_crystal_heavy_crossbow"
+  }
+}

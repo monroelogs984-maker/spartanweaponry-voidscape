@@ -1,0 +1,15 @@
+{
+  "type": "voidscape:smithing",
+  "template": {
+    "item": "voidscape:voidic_template"
+  },
+  "base": {
+    "item": "spartanweaponry:netherite_dagger"
+  },
+  "addition": {
+    "item": "voidscape:voidic_crystal"
+  },
+  "result": {
+    "item": "spartanweaponryvoidscape:voidic_crystal_dagger"
+  }
+}

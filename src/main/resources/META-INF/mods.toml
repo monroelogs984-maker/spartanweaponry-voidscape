@@ -1,0 +1,47 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="spartanweaponryvoidscape"
+version="${file.jarVersion}"
+displayName="Spartan Weaponry: Voidscape"
+authors="BROMAX"
+description='''
+Adds Voidscape materials (Voidic Crystal and Corrupt) to Spartan Weaponry, upgraded by smithing just like Voidscape's own gear.
+'''
+
+[[dependencies.spartanweaponryvoidscape]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.spartanweaponryvoidscape]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.spartanweaponryvoidscape]]
+    modId="spartanweaponry"
+    mandatory=true
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.spartanweaponryvoidscape]]
+    modId="spartantoolkit"
+    mandatory=true
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.spartanweaponryvoidscape]]
+    modId="voidscape"
+    mandatory=true
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"

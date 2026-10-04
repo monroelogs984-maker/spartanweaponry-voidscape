@@ -1,0 +1,6 @@
+{
+  "parent": "spartanweaponry:item/base/longbow_pulling",
+  "textures": {
+    "layer0": "spartanweaponryvoidscape:item/voidic_crystal_longbow_pulling_2"
+  }
+}

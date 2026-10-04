@@ -1,0 +1,15 @@
+{
+  "type": "voidscape:smithing",
+  "template": {
+    "item": "voidscape:voidic_template"
+  },
+  "base": {
+    "item": "spartanweaponryvoidscape:voidic_crystal_flanged_mace"
+  },
+  "addition": {
+    "item": "voidscape:tendril"
+  },
+  "result": {
+    "item": "spartanweaponryvoidscape:corrupt_flanged_mace"
+  }
+}

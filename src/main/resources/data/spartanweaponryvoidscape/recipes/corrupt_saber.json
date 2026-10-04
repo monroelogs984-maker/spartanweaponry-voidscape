@@ -1,0 +1,15 @@
+{
+  "type": "voidscape:smithing",
+  "template": {
+    "item": "voidscape:voidic_template"
+  },
+  "base": {
+    "item": "spartanweaponryvoidscape:voidic_crystal_saber"
+  },
+  "addition": {
+    "item": "voidscape:tendril"
+  },
+  "result": {
+    "item": "spartanweaponryvoidscape:corrupt_saber"
+  }
+}

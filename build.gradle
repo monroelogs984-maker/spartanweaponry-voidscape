@@ -1,0 +1,52 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+}
+
+version = '1.0.0-1.20.1'
+group = 'com.bromax.spartanvoidscape'
+archivesBaseName = 'spartanweaponryvoidscape'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: "${minecraft_version}"
+}
+
+repositories {
+    flatDir { dirs 'libs' }
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    // Compile against the exact jars Resolve ships (copied into libs/), deobfuscated by ForgeGradle.
+    compileOnly fg.deobf("local:spartanweaponry:3.2.1")
+    compileOnly fg.deobf("local:spartantoolkit:1.6.1")
+    compileOnly fg.deobf("local:voidscape:1.5.389")
+}
+
+jar {
+    manifest {
+        attributes([
+            'Specification-Title'   : 'spartanweaponryvoidscape',
+            'Specification-Vendor'  : 'BROMAX',
+            'Specification-Version' : '1',
+            'Implementation-Title'  : project.name,
+            'Implementation-Version': "${version}",
+            'Implementation-Vendor' : 'BROMAX'
+        ])
+    }
+}
+
+jar.finalizedBy('reobfJar')
+
+// Copies the built jar into BROMAX's Resolve. Only run with the game closed.
+task deploy {
+    dependsOn build
+    doLast {
+        copy {
+            from "build/libs/${archivesBaseName}-${version}.jar"
+            into "${System.getProperty('user.home')}/Documents/curseforge/minecraft/Instances/{BROMAX's} Resolve/mods"
+        }
+        println "[DEPLOY] ${archivesBaseName} -> BROMAX's Resolve"
+    }
+}
