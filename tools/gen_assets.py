@@ -44,7 +44,12 @@ MATERIALS = {
         'addition': 'voidscape:tendril',
     },
 }
-TRAIT_NAMES = {'voidtouched': 'Voidtouched', 'deep_voidtouched': 'Deep Voidtouched', 'corruption': 'Corruption'}
+# name, description (Spartan reads tooltip.<modid>.trait.<id>.desc; keep in sync with the Java traits)
+TRAITS = {
+    'voidtouched': ('Voidtouched', '+30% damage while in the Void'),
+    'deep_voidtouched': ('Deep Voidtouched', '+40% damage while in the Void'),
+    'corruption': ('Corruption', 'Hits inflict Wither for 3 seconds'),
+}
 
 
 def hex_rgb(h):
@@ -153,8 +158,9 @@ def main():
                         value.replace('Neptunium', spec['display'])
 
         lang['itemGroup.' + MODID] = 'Spartan Weaponry: Voidscape'
-        for trait, name in TRAIT_NAMES.items():
+        for trait, (name, desc) in TRAITS.items():
             lang[f'tooltip.{MODID}.trait.{trait}'] = name
+            lang[f'tooltip.{MODID}.trait.{trait}.desc'] = desc
         path = os.path.join(RES, 'assets', MODID, 'lang', 'en_us.json')
         os.makedirs(os.path.dirname(path), exist_ok=True)
         json.dump(dict(sorted(lang.items())), open(path, 'w'), indent=2)

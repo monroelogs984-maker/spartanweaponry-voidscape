@@ -49,6 +49,9 @@
   "item.spartanweaponryvoidscape.voidic_crystal_warhammer": "Voidic Crystal Warhammer",
   "itemGroup.spartanweaponryvoidscape": "Spartan Weaponry: Voidscape",
   "tooltip.spartanweaponryvoidscape.trait.corruption": "Corruption",
+  "tooltip.spartanweaponryvoidscape.trait.corruption.desc": "Hits inflict Wither for 3 seconds",
   "tooltip.spartanweaponryvoidscape.trait.deep_voidtouched": "Deep Voidtouched",
-  "tooltip.spartanweaponryvoidscape.trait.voidtouched": "Voidtouched"
+  "tooltip.spartanweaponryvoidscape.trait.deep_voidtouched.desc": "+40% damage while in the Void",
+  "tooltip.spartanweaponryvoidscape.trait.voidtouched": "Voidtouched",
+  "tooltip.spartanweaponryvoidscape.trait.voidtouched.desc": "+30% damage while in the Void"
 }
