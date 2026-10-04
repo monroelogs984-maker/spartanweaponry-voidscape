@@ -43,6 +43,9 @@ jar.finalizedBy('reobfJar')
 task deploy {
     dependsOn build
     doLast {
+        def modsDir = "${System.getProperty('user.home')}/Documents/curseforge/minecraft/Instances/{BROMAX's} Resolve/mods"
+        // Remove older versions of this mod first so the instance never loads two copies.
+        delete fileTree(dir: modsDir, include: "${archivesBaseName}-*.jar")
         copy {
             from "build/libs/${archivesBaseName}-${version}.jar"
             into "${System.getProperty('user.home')}/Documents/curseforge/minecraft/Instances/{BROMAX's} Resolve/mods"
